@@ -9,22 +9,29 @@ namespace Assignment1
         {
             Console.WriteLine("Hello World!");
 
-            int n, i, m = 0, flag = 0;
-            Console.Write("Enter the Number to check Prime: ");
-            n = int.Parse(Console.ReadLine());
-            m = n / 2;
-            for (i = 2; i <= m; i++)
-            {
-                if (n % i == 0)
-                {
-                    Debug.Write("Number is not Prime.");
-                    flag = 1;
-                    break;
-                }
-            }
-            if (flag == 0)
-                Debug.Write("Number is Prime.");
+            int n1, n2, i, j, m = 0, flag = 0;
+            Console.Write("Enter the starting range to check Prime: ");
+            n1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter the ending range to check Prime: ");
+            n2 = int.Parse(Console.ReadLine());
 
+            for (i=n1; i<= n2; i++)
+            {
+                flag = 0;
+                m = i / 2;
+                for (j=2; j <= m; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        Debug.Write(i + " is not Prime.");
+                        flag = 1;
+                        break;
+                    }
+                }
+                if (flag == 0)
+                 Debug.Write(i + " is Prime.");
+            }
+            
         }
     }
 }
