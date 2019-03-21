@@ -8,7 +8,7 @@ namespace Assignment1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            int n1, n2, i, j, m = 0, flag = 0;
+            int n1, n2, n4, i, j, m = 0, flag = 0;
             Console.Write("Enter the starting range to check Prime: ");
             n1 = int.Parse(Console.ReadLine());
             Console.Write("Enter the ending range to check Prime: ");
@@ -22,16 +22,17 @@ namespace Assignment1
                 {
                     if (i % j == 0)
                     {
-                        Debug.Write(i + " is not Prime.");
+                        Console.Write(i + " is not Prime.");
                         flag = 1;
                         break;
                     }
                 }
                 if (flag == 0)
-                    Debug.Write(i + " is Prime.");
+                    Console.Write(i + " is Prime.");
             }
 
-            Console.Write("Enter to exit console");
+            Console.Write("Enter somthing to exit: ");
+            n4 = int.Parse(Console.ReadLine());
         }
     }
 
