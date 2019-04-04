@@ -40,6 +40,10 @@ namespace Assignment1
             Console.WriteLine();
             Console.Write("Enter somthing to exit: ");
             n4 = int.Parse(Console.ReadLine());
+
+            //Self-reflection: This assignment gave me good exposure to programing in C# with IDE. I've learned a lot about looping, 
+            //data types, conditonal statements, printing in console. This is very interesting and i will keep on exporing.
+            //Thanks for the great overview of ASP .Net and the developer environment.
         }
 
         private static void computeFrequency(int[] arr)
